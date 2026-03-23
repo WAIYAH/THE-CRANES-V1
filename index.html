@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanunka FC - The Cranes official website. Get the latest match updates, player profiles, news, tickets, and more from one of Kenya's most passionate football clubs.">
+  <meta name="keywords" content="Kanunka FC, The Cranes, football, soccer, Kenya, matches, players, tickets">
+  <meta name="author" content="Kanunka FC">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kanunka FC - The Cranes | Official Website">
+  <meta property="og:description" content="The digital home of Kanunka FC. Soaring High, United in Flight.">
+  <meta property="og:image" content="img/craneslogo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_KE">
+
+  <title>Kanunka FC - The Cranes | Official Website</title>
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="icon" href="img/craneslogo.png" type="image/png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kanunka FC - The Cranes",
+    "alternateName": "The Cranes",
+    "url": "https://kanunkafc.com",
+    "logo": "img/craneslogo.png",
+    "sport": "Football",
+    "foundingDate": "2002",
+    "slogan": "No Rain No Terrain",
+    "location": {
+      "@type": "Place",
+      "name": "Cranes Stadium",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kanunka Centre",
+        "addressCountry": "KE"
+      }
+    },
+    "coach": { "@type": "Person", "name": "Idris Ole" }
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="hero-bg-1" style="background-image: url('img/bac.jpg');"></div>
+      <div class="hero-bg" id="hero-bg-2" style="background-image: url('img/bac2.jpg'); opacity: 0;"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-secondary); font-weight: 600; margin-bottom: 0.5rem;">Welcome to</p>
+        <h1>Kanunka FC <span class="hero-accent">The Cranes</span></h1>
+        <p>"Soaring High, United in Flight"</p>
+        <div class="hero-ctas">
+          <a href="matches.html" class="btn-primary"><i class="fas fa-futbol"></i> Latest Matches</a>
+          <a href="careers.html" class="btn-outline"><i class="fas fa-user-plus"></i> Join The Cranes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Match Countdown -->
+    <section class="section" id="next-match">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Next Match</h2>
+          <p>Don't miss the action at Cranes Stadium</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="match-card reveal" style="max-width: 600px; margin: 0 auto; padding: 2rem;">
+          <div style="text-align: center; margin-bottom: 0.5rem;">
+            <span class="card-badge" style="background: rgba(245,158,11,0.15); color: var(--color-secondary);">Upcoming</span>
+          </div>
+          <div class="match-teams">
+            <div class="match-team">
+              <img src="img/craneslogo.png" alt="Kanunka FC" width="48" height="48">
+              <span>Kanunka FC</span>
+            </div>
+            <div class="match-vs">VS</div>
+            <div class="match-team">
+              <img src="img/crane.png" alt="Kish FC" width="48" height="48">
+              <span>Kish FC</span>
+            </div>
+          </div>
+          <div class="countdown" id="next-match-countdown"></div>
+          <div class="match-meta" style="text-align: center; margin-top: 1.25rem;">
+            <p><i class="far fa-calendar"></i> April 15, 2026 &nbsp; <i class="far fa-clock"></i> 3:00 PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> Cranes Stadium</p>
+          </div>
+          <div style="text-align: center; margin-top: 1.25rem;">
+            <a href="tickets.html" class="btn-primary btn-sm"><i class="fas fa-ticket-alt"></i> Get Tickets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Results -->
+    <section class="section" style="background: var(--color-dark); color: #f1f5f9;" id="results">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 style="color: #ffffff;">Latest Results</h2>
+          <p style="color: #94a3b8;">Recent match outcomes</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid-3 reveal" id="latest-results"></div>
+        <div style="text-align: center; margin-top: 2rem;" class="reveal">
+          <a href="matches.html" class="btn-outline"><i class="fas fa-table"></i> View Full Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- League Position Banner -->
+    <section class="section reveal" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); color: #fff; text-align: center;">
+      <div class="container">
+        <p style="text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.8rem; font-weight: 600; opacity: 0.8; margin-bottom: 0.5rem;">Current League Position</p>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+          <div><div class="stat-number" style="color: var(--color-secondary);">2nd</div><div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-top: 0.25rem;">Position</div></div>
+          <div><div class="stat-number" style="color: #ffffff;">20</div><div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-top: 0.25rem;">Points</div></div>
+          <div><div class="stat-number" style="color: #ffffff;">25</div><div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-top: 0.25rem;">Goals Scored</div></div>
+          <div><div class="stat-number" style="color: var(--color-accent);">+22</div><div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-top: 0.25rem;">Goal Diff</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Highlights -->
+    <section class="section" id="news-highlights">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Latest News</h2>
+          <p>Stay up to date with The Cranes</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid-3 reveal" id="news-cards"></div>
+        <div style="text-align: center; margin-top: 2rem;" class="reveal">
+          <a href="news.html" class="btn-dark"><i class="fas fa-newspaper"></i> All News</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Player Spotlight -->
+    <section class="section" style="background: var(--color-dark); color: #f1f5f9;" id="spotlight">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 style="color: #fff;">Player Spotlight</h2>
+          <p style="color: #94a3b8;">Top performer this season</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="reveal" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; justify-content: center;">
+          <div style="flex: 0 0 280px;">
+            <img src="img/players/olanyorr.jpg" alt="Olanyorr Kulou" style="width: 280px; height: 340px; object-fit: cover; object-position: top; border-radius: 1rem; border: 3px solid var(--color-secondary);" loading="lazy">
+          </div>
+          <div style="max-width: 500px;">
+            <span class="card-badge" style="background: rgba(245,158,11,0.2); color: var(--color-secondary); margin-bottom: 1rem; display: inline-block;">⭐ Player of the Season</span>
+            <h3 style="font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">Olanyorr Kulou</h3>
+            <p style="color: var(--color-secondary); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1rem;">Forward</p>
+            <p style="color: #94a3b8; margin-bottom: 1.5rem;">The league's most lethal striker. Olanyorr has been instrumental in Kanunka FC's push for the title with his clinical finishing and tireless work rate.</p>
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+              <div><div class="stat-number" style="font-size: 2rem;">15</div><div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b;">Goals</div></div>
+              <div><div class="stat-number" style="font-size: 2rem;">4</div><div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b;">Assists</div></div>
+              <div><div class="stat-number" style="font-size: 2rem;">8</div><div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b;">Matches</div></div>
+            </div>
+            <a href="players.html" class="btn-primary" style="margin-top: 1.5rem;"><i class="fas fa-users"></i> View Squad</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Highlights -->
+    <section class="section" id="video-highlights">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Match Highlights</h2>
+          <p>Relive the best moments</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid-3 reveal" id="video-cards"></div>
+        <div style="text-align: center; margin-top: 2rem;" class="reveal">
+          <a href="gallery.html" class="btn-dark"><i class="fas fa-photo-video"></i> Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <section class="section reveal" style="background: var(--color-card); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container" style="text-align: center;">
+        <p style="text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 2rem;">Our Partners & Sponsors</p>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; opacity: 0.5;">
+          <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-text-muted);">Partner 1</span>
+          <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-text-muted);">Partner 2</span>
+          <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-text-muted);">Partner 3</span>
+          <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-text-muted);">Partner 4</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 1.5rem;">Interested in partnering with Kanunka FC? <a href="contact.html" style="color: var(--color-primary); font-weight: 600;">Get in touch</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
