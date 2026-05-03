@@ -153,7 +153,7 @@ function renderFooter() {
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; ${year} Kanunka FC - The Cranes. All Rights Reserved. | NO RAIN NO TERRAIN</p>
+        <p>&copy; ${year} Kanunka FC - The Cranes. All Rights Reserved. | NO RAIN NO TERRAIN | Developed by <a href="https://nakolaexpertsystems.vercel.app" target="_blank" rel="noopener noreferrer">Nakola Expert Systems</a></p>
       </div>
     </footer>
   `;
