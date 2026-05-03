@@ -228,7 +228,7 @@ THE-CRANES/
 │   ├── tickets.js          # Tickets page logic
 │   ├── contact.js          # Contact page logic
 │   └── careers.js          # Careers page logic
-├── img/                    # All images
+├── img/--------------------# All images
 ├── docs/
 │   └── SPORTS_WEBSITE_ARCHITECTURE.md
 └── README.md

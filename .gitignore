@@ -56,10 +56,6 @@ temp/
 coverage/
 .nyc_output/
 
-# Asset optimization (original high-res files)
-assets/images/optimized/originals/
-assets/images/archive/
-
 # Analytics
 analytics-local.json
 

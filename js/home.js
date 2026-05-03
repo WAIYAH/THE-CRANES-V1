@@ -138,7 +138,7 @@ function renderVideoHighlights() {
   const trainingImage = getPhotosByCategory('training', 1)[0]?.src || 'img/photos/root__bac2.jpg';
 
   const videos = [
-    { title: 'Kanunka FC 2 - 0 OITI FC | Highlights', thumbnail: 'img/videos/Man Utd v Southampton(720P_HD).mp4', type: 'local' },
+    { title: 'Kanunka FC 2 - 0 OITI FC | Highlights', thumbnail: 'img/videos/man-utd-v-southampton(720p_hd).mp4', type: 'local' },
     { title: 'Best Goals of the Season', thumbnail: matchImage, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', type: 'youtube' },
     { title: 'Training Ground Skills', thumbnail: trainingImage, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', type: 'youtube' }
   ];

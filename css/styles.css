@@ -1193,6 +1193,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #475569;
 }
 
+.footer-bottom a {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.footer-bottom a:hover {
+  color: var(--color-secondary-light);
+}
+
 /* Footer Marquee */
 .footer-marquee {
   background: var(--color-primary);

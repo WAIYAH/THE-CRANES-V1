@@ -31,7 +31,7 @@ function renderNav(activePage) {
     <nav class="nav-main" id="main-nav">
       <div class="nav-container">
         <a href="index.html" class="nav-brand">
-          <img src="img/craneslogo.png" alt="Kanunka FC" width="40" height="40">
+          <img src="img/logo/craneslogo.png" alt="Kanunka FC" width="40" height="40">
           <span>Kanunka FC</span>
         </a>
         <div class="nav-links">${navLinks}</div>
@@ -91,7 +91,7 @@ function renderFooter() {
       <div class="footer-grid">
         <div class="footer-about">
           <div class="footer-brand">
-            <img src="img/craneslogo.png" alt="Kanunka FC" width="48" height="48">
+            <img src="img/logo/craneslogo.png" alt="Kanunka FC" width="48" height="48">
             <span>Kanunka FC</span>
           </div>
           <p>Founded in 2002, Kanunka FC - The Cranes has grown from humble beginnings to become a community powerhouse. United in flight, we soar together.</p>
@@ -140,8 +140,8 @@ function renderFooter() {
           <ul>
             <li><a href="tel:+254723245123">+254 723 245 123</a></li>
             <li><a href="mailto:info@kanunkafc.com">info@kanunkafc.com</a></li>
-            <li><a href="#">The Cranes Avenue</a></li>
-            <li><a href="#">Kanunka Centre</a></li>
+            <li><a href="#">Narok South, Osupuko Division</a></li>
+            <li><a href="#">CV2C+22 Morijo, Naroosura</a></li>
           </ul>
         </div>
       </div>

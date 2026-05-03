@@ -70,7 +70,7 @@ function renderVideos() {
 
   const videos = [
     { title: 'Season Highlights 2024/25', thumbnail: matchThumb, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
-    { title: 'Kanunka FC 2-0 OITI FC', thumbnail: matchThumb, type: 'local', src: 'img/videos/Man Utd v Southampton(720P_HD).mp4' },
+    { title: 'Kanunka FC 2-0 OITI FC', thumbnail: matchThumb, type: 'local', src: 'img/videos/man-utd-v-southampton(720p_hd).mp4' },
     { title: 'Training Ground Skills', thumbnail: trainingThumb, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }
   ];
 

@@ -280,12 +280,7 @@ const KANUNKA_PHOTOS = [
         "category":  "club"
     },
     {
-        "src":  "img/photos/root__IMG-20250326-WA0016.jpg",
-        "caption":  "Club Moment",
-        "category":  "club"
-    },
-    {
-        "src":  "img/photos/root__IMG-20250326-WA0018.jpg",
+        "src":  "img/photos/root__IMG-20250326-WA0015.jpg",
         "caption":  "Club Moment",
         "category":  "club"
     },
@@ -295,12 +290,17 @@ const KANUNKA_PHOTOS = [
         "category":  "club"
     },
     {
-        "src":  "img/photos/root__IMG-20250326-WA0023.jpg",
+        "src":  "img/photos/root__IMG-20250326-WA0020.jpg",
         "caption":  "Club Moment",
         "category":  "club"
     },
     {
-        "src":  "img/photos/root__IMG-20250326-WA0026.jpg",
+        "src":  "img/photos/root__IMG-20250326-WA0027.jpg",
+        "caption":  "Club Moment",
+        "category":  "club"
+    },
+    {
+        "src":  "img/photos/root__IMG-20250326-WA0030.jpg",
         "caption":  "Club Moment",
         "category":  "club"
     },
@@ -615,27 +615,27 @@ const KANUNKA_PHOTOS = [
         "category":  "players"
     },
     {
-        "src":  "img/photos/players__IMG-20250326-WA0085.jpg",
+        "src":  "img/photos/players__IMG-20250326-WA0072.jpg",
         "caption":  "Players Moment",
         "category":  "players"
     },
     {
-        "src":  "img/photos/players__IMG-20250404-WA0050.jpg",
+        "src":  "img/photos/players__Malah.jpg",
         "caption":  "Players Moment",
         "category":  "players"
     },
     {
-        "src":  "img/photos/players__IMG-20250404-WA0051.jpg",
+        "src":  "img/photos/players__Newsigning.jpg",
         "caption":  "Players Moment",
         "category":  "players"
     },
     {
-        "src":  "img/photos/players__IMG-20250404-WA0053.jpg",
+        "src":  "img/photos/players__Nkababa.jpg",
         "caption":  "Players Moment",
         "category":  "players"
     },
     {
-        "src":  "img/photos/players__IMG-20250404-WA0054.jpg",
+        "src":  "img/photos/players__ramos.jpg",
         "caption":  "Players Moment",
         "category":  "players"
     },
