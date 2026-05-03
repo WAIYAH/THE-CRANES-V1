@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /img/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+Disallow: /admin/
+Disallow: /*.json
+Disallow: /*?*
+Disallow: /tmp/
+Disallow: /temp/
+
+Crawl-delay: 1
+Request-rate: 30/1m
+
+Sitemap: https://kanunkafc.com/sitemap.xml

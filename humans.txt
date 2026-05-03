@@ -1,0 +1,51 @@
+/* KANUNKA FC - THE CRANES WEBSITE */
+
+/* TEAM */
+Project: Kanunka FC - The Cranes Official Website
+Created: February 2026
+Last Updated: May 3, 2026
+
+Project Manager: Lucky Nakola
+Principal Frontend Engineer: Senior Web Developer
+UI/UX Designer: UX/Branding Specialist
+SEO Specialist: Content & Technical SEO Expert
+
+/* TECHNOLOGIES */
+Frontend: HTML5, CSS3, JavaScript ES6+
+Design System: Custom CSS with design tokens
+Animations: GSAP 3.12.5
+Icons: Font Awesome 6.5.1
+Version Control: Git
+
+/* THANKS */
+Thanks to all contributors and the Kanunka FC community for their support
+Special thanks to Kanunka FC management for the vision and direction
+
+/* SITE INFORMATION */
+Domain: kanunkafc.com
+Founded: Kanunka FC established 2002
+Website Launched: May 3, 2026
+Standards: HTML5, CSS3, WCAG 2.1 AA Accessibility
+Mobile First: Yes
+Responsive: Yes
+
+/* HOSTING & INFRASTRUCTURE */
+Platform: Static website hosting
+CDN: Content Delivery Network ready
+Performance Optimization: Image compression, lazy loading, minification
+
+/* SOCIAL MEDIA */
+Facebook: https://facebook.com/groups/715970354064150/
+Twitter: https://twitter.com/KanunkaFC
+Instagram: https://instagram.com/kanunkafc
+YouTube: https://youtube.com/@KanunkaFC
+TikTok: https://tiktok.com/@kanunkafc
+
+/* CONTACT */
+Email: info@kanunkafc.com
+Phone: +254 723 245 123
+Location: Kanunka Centre, Kenya
+
+/* MISSION */
+Kanunka FC - The Cranes: "No Rain No Terrain"
+Soaring High, United in Flight.

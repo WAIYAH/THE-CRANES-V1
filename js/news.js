@@ -13,7 +13,7 @@ const newsArticles = [
     id: 1,
     title: 'Cranes Soar Past Rivals in Dominant 3-1 Victory',
     category: 'match-analysis',
-    image: 'img/random/game2.jpg',
+    image: 'img/random/IMG-20250312-WA0049.jpg',
     excerpt: 'Kanunka FC delivered a masterclass performance against local rivals, with Olanyorr Kulou scoring a brace and Nkababa adding a third to seal a convincing victory at Cranes Stadium.',
     date: 'Mar 28, 2025',
     author: 'Sports Desk'
@@ -22,7 +22,7 @@ const newsArticles = [
     id: 2,
     title: 'Haling Malah Kamoiro Joins Kanunka Cranes FC as Star Striker',
     category: 'transfers',
-    image: 'img/random/game.jpg',
+    image: 'img/random/IMG-20250312-WA0058.jpg',
     excerpt: 'Kanunka FC has completed the signing of Haling Malah Kamoiro, a talented striker who brings pace, creativity, and clinical finishing to The Cranes\' attacking lineup.',
     date: 'Mar 15, 2025',
     author: 'Transfer Desk'
@@ -31,7 +31,7 @@ const newsArticles = [
     id: 3,
     title: 'Tactical Breakdown: How Kanunka FC Shut Down Oiti FC',
     category: 'match-analysis',
-    image: 'img/random/game2.jpg',
+    image: 'img/random/IMG-20250312-WA0065.jpg',
     excerpt: 'An in-depth analysis of the defensive masterclass that saw The Cranes keep a clean sheet and dominate possession in the 2-0 victory over Oiti FC.',
     date: 'Apr 3, 2025',
     author: 'Tactics Team'
@@ -40,7 +40,7 @@ const newsArticles = [
     id: 4,
     title: 'Transfer Window: Key Targets for The Cranes',
     category: 'transfers',
-    image: 'img/training/train1.jpg',
+    image: 'img/training/IMG-20250312-WA0044.jpg',
     excerpt: 'As the transfer window approaches, we look at the positions Kanunka FC needs to strengthen and the potential targets on the club\'s radar.',
     date: 'Mar 20, 2025',
     author: 'Transfer Desk'
@@ -49,7 +49,7 @@ const newsArticles = [
     id: 5,
     title: 'Community Day: Kanunka FC Gives Back',
     category: 'club-news',
-    image: 'img/fans/fan1.jpg',
+    image: 'img/fans/IMG-20250312-WA0030.jpg',
     excerpt: 'The Cranes players and staff participated in a community outreach day, visiting local schools and hospitals to inspire the next generation.',
     date: 'Mar 5, 2025',
     author: 'Club Media'
@@ -58,7 +58,7 @@ const newsArticles = [
     id: 6,
     title: 'Youth Academy Graduates Earn First Team Call-Up',
     category: 'club-news',
-    image: 'img/training/train2.jpg',
+    image: 'img/training/IMG-20250312-WA0045.jpg',
     excerpt: 'Three promising graduates from the Kanunka FC Youth Academy have been promoted to the first team squad, a testament to the club\'s development pathway.',
     date: 'Feb 28, 2025',
     author: 'Academy Report'

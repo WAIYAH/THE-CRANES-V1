@@ -149,7 +149,7 @@ function renderFAQ() {
 
 document.addEventListener('DOMContentLoaded', () => {
   KanunkaFC.initApp('tickets');
-  KanunkaFC.initCountdown('2026-04-15T16:00:00', 'match-countdown');
+  KanunkaFC.initCountdown('2026-05-13T15:00:00', 'match-countdown');
   renderTicketCards();
   renderMembershipCards();
   renderStadiumInfo();

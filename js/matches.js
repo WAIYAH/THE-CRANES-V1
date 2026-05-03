@@ -69,12 +69,12 @@ function renderFixtures() {
   if (!container) return;
 
   const fixtures = [
-    { home: 'Kanunka Cranes FC', away: 'Kish FC', date: 'Apr 15, 2026', time: '3:00 PM', venue: 'Cranes Stadium', homeLogo: 'img/craneslogo.png' },
-    { home: 'Kosika FC', away: 'Salama FC', date: 'Apr 17, 2026', time: '3:00 PM', venue: 'Koseka Stadium', homeLogo: '' },
-    { home: 'Kanunka Cranes FC', away: 'Osero FC', date: 'Apr 22, 2026', time: '3:00 PM', venue: 'Cranes Stadium', homeLogo: 'img/craneslogo.png' },
-    { home: 'Oloika FC', away: 'Kanunka Cranes FC', date: 'Apr 29, 2026', time: '3:00 PM', venue: 'Oloika Grounds', homeLogo: '' },
-    { home: 'Kanunka Cranes FC', away: 'Kosika FC', date: 'May 6, 2026', time: '3:00 PM', venue: 'Cranes Stadium', homeLogo: 'img/craneslogo.png' },
-    { home: 'Oiti FC', away: 'Kanunka Cranes FC', date: 'May 13, 2026', time: '3:00 PM', venue: 'Oiti Stadium', homeLogo: '' }
+    { home: 'Kanunka Cranes FC', away: 'Oiti FC', date: 'May 13, 2026', time: '3:00 PM', venue: 'Cranes Stadium', homeLogo: 'img/craneslogo.png' },
+    { home: 'Kosika FC', away: 'Salama FC', date: 'May 17, 2026', time: '3:00 PM', venue: 'Koseka Stadium', homeLogo: '' },
+    { home: 'Kanunka Cranes FC', away: 'Osero FC', date: 'May 24, 2026', time: '3:00 PM', venue: 'Cranes Stadium', homeLogo: 'img/craneslogo.png' },
+    { home: 'Oloika FC', away: 'Kanunka Cranes FC', date: 'May 31, 2026', time: '3:00 PM', venue: 'Oloika Grounds', homeLogo: '' },
+    { home: 'Kanunka Cranes FC', away: 'Kosika FC', date: 'Jun 7, 2026', time: '3:00 PM', venue: 'Cranes Stadium', homeLogo: 'img/craneslogo.png' },
+    { home: 'Kish FC', away: 'Kanunka Cranes FC', date: 'Jun 14, 2026', time: '3:00 PM', venue: 'Kish Stadium', homeLogo: '' }
   ];
 
   container.innerHTML = fixtures.map(f => `

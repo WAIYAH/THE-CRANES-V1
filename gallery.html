@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Kanunka FC photo and video gallery. Matchday photos, training sessions, behind-the-scenes moments, and highlight videos from The Cranes.">
   <title>Photo & Video Gallery | Kanunka FC - The Cranes</title>
+  <meta property="og:title" content="Photo & Video Gallery | Kanunka FC - The Cranes">
+  <meta property="og:description" content="Kanunka FC photo and video gallery. Matchday photos, training sessions, and highlight videos.">
+  <meta property="og:image" content="https://kanunkafc.com/img/craneslogo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photo & Video Gallery | Kanunka FC">
+  <meta name="twitter:description" content="Browse Kanunka FC photo and video gallery.">
+  <link rel="canonical" href="https://kanunkafc.com/gallery.html">
+  <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="img/craneslogo.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
@@ -14,6 +23,11 @@
     <header class="page-hero">
       <h1>Gallery</h1>
       <p>Relive the moments that define The Cranes</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span aria-current="page">Gallery</span>
+      </nav>
     </header>
 
     <!-- Photo Gallery -->
@@ -21,16 +35,22 @@
       <div class="container">
         <div class="section-header reveal">
           <h2>Photo Gallery</h2>
+          <p id="gallery-summary">Loading photos...</p>
           <div class="accent-line"></div>
         </div>
         <div class="filter-group reveal">
           <button class="filter-pill active" data-photo="all">All</button>
           <button class="filter-pill" data-photo="matches">Matches</button>
           <button class="filter-pill" data-photo="training">Training</button>
+          <button class="filter-pill" data-photo="players">Players</button>
           <button class="filter-pill" data-photo="behind-the-scenes">Behind the Scenes</button>
           <button class="filter-pill" data-photo="fans">Fans</button>
+          <button class="filter-pill" data-photo="club">Club Life</button>
         </div>
         <div class="grid grid-4 reveal" id="photo-gallery"></div>
+        <div class="reveal" style="text-align: center; margin-top: 2rem;">
+          <button id="load-more-photos" class="btn-dark" type="button"><i class="fas fa-images"></i> Load More Photos</button>
+        </div>
       </div>
     </section>
 
@@ -55,6 +75,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/photo-library.js"></script>
   <script src="js/gallery.js"></script>
 </body>
 </html>

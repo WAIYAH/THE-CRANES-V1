@@ -1,0 +1,34 @@
+{
+  "name": "Kanunka FC - The Cranes",
+  "short_name": "Kanunka Cranes",
+  "description": "Official website of Kanunka FC - The Cranes, Kenya's premier football club. Latest matches, players, news, tickets, and community.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a5f",
+  "icons": [
+    {
+      "src": "/img/craneslogo.png",
+      "sizes": "64x64 128x128 256x256 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/craneslogo.png",
+      "sizes": "64x64 128x128 256x256 512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["sports"],
+  "screenshots": [
+    {
+      "src": "/img/craneslogo.png",
+      "sizes": "540x720",
+      "form_factor": "narrow",
+      "type": "image/png"
+    }
+  ]
+}

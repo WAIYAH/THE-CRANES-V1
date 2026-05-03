@@ -7,7 +7,7 @@ const jobListings = [
     icon: 'fa-futbol',
     description: 'Seeking a goal-scoring talent with pace, power, and clinical finishing ability to lead The Cranes attacking line.',
     requirements: ['Proven goal-scoring record', 'Age 18–30', 'Match-fit and available immediately'],
-    deadline: 'April 1, 2026',
+    deadline: 'June 1, 2026',
     type: 'Full-time'
   },
   {
@@ -16,7 +16,7 @@ const jobListings = [
     icon: 'fa-clipboard-list',
     description: 'Support the head coach in training sessions, match preparation, tactical analysis and player development programmes.',
     requirements: ['CAF/FIFA coaching license', '3+ years coaching experience', 'Team leadership skills'],
-    deadline: 'March 30, 2026',
+    deadline: 'May 30, 2026',
     type: 'Full-time'
   },
   {
@@ -25,7 +25,7 @@ const jobListings = [
     icon: 'fa-heartbeat',
     description: 'Design and implement fitness programmes, manage player conditioning and injury prevention protocols.',
     requirements: ['Sports Science degree or equivalent', 'Experience in football fitness', 'First-aid certification'],
-    deadline: 'April 10, 2026',
+    deadline: 'June 10, 2026',
     type: 'Full-time'
   },
   {
@@ -34,7 +34,7 @@ const jobListings = [
     icon: 'fa-briefcase',
     description: 'Manage day-to-day club operations, scheduling, correspondence and club documentation.',
     requirements: ['Degree in Business Administration', 'Proficiency in MS Office', 'Excellent communication skills'],
-    deadline: 'April 15, 2026',
+    deadline: 'June 15, 2026',
     type: 'Full-time'
   }
 ];

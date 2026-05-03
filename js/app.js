@@ -63,7 +63,7 @@ function initTicker() {
     { home: 'Osero FC', away: 'Kanunka Cranes FC', score: '0 - 2', badge: 'FT' },
     { home: 'Salama FC', away: 'Oloika FC', score: '3 - 1', badge: 'FT' },
     { home: 'Osero FC', away: 'Oloika FC', score: '3 - 2', badge: 'FT' },
-    { home: 'Kanunka Cranes FC', away: 'Kish FC', score: 'Apr 15', badge: 'NEXT' }
+    { home: 'Kanunka Cranes FC', away: 'Oiti FC', score: 'May 13', badge: 'NEXT' }
   ];
 
   const tickerHTML = tickerData.map(m => `
@@ -131,7 +131,7 @@ function renderFooter() {
             <li><a href="tickets.html">Buy Tickets</a></li>
             <li><a href="tickets.html#membership">Membership</a></li>
             <li><a href="tickets.html#stadium">Stadium Guide</a></li>
-            <li><a href="tickets.html#merch">Merchandise</a></li>
+            <li><a href="tickets.html#ticket-types">Tickets</a></li>
           </ul>
         </div>
 
@@ -367,7 +367,8 @@ function initLightbox() {
     const trigger = e.target.closest('[data-lightbox]');
     if (trigger) {
       lightboxImg.src = trigger.dataset.lightbox;
-      lightboxImg.alt = trigger.alt || 'Gallery image';
+      const nestedImgAlt = trigger.querySelector('img')?.alt;
+      lightboxImg.alt = trigger.dataset.caption || nestedImgAlt || 'Gallery image';
       lightbox.classList.add('open');
       document.body.style.overflow = 'hidden';
     }

@@ -2,6 +2,8 @@
    KANUNKA FC - HOME PAGE
    ============================================================ */
 
+'use strict';
+
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize shared components
   KanunkaFC.initApp('home');
@@ -9,20 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Hero slideshow
   initHeroSlideshow();
 
-  // Next match countdown — April 15, 2026
-  KanunkaFC.initCountdown('April 15, 2026 15:00:00', 'next-match-countdown');
+  // Next match countdown - May 13, 2026
+  KanunkaFC.initCountdown('May 13, 2026 15:00:00', 'next-match-countdown');
 
-  // Render latest results
+  // Render page blocks
   renderLatestResults();
-
-  // Render news highlights
   renderNewsHighlights();
-
-  // Render video highlights
   renderVideoHighlights();
+  renderHomePhotoWall();
+  renderFanVoices();
 });
 
-// ─── Hero Slideshow ─────────────────────────────────────────
+function getPhotosByCategory(category, limit = 3) {
+  const allPhotos = window.KanunkaMedia?.photos || [];
+  const filtered = allPhotos.filter(photo => photo.category === category);
+  return filtered.slice(0, limit);
+}
+
+// --- Hero Slideshow -------------------------------------------------------
 function initHeroSlideshow() {
   const bg1 = document.getElementById('hero-bg-1');
   const bg2 = document.getElementById('hero-bg-2');
@@ -42,7 +48,7 @@ function initHeroSlideshow() {
   }, 5000);
 }
 
-// ─── Latest Results ─────────────────────────────────────────
+// --- Latest Results -------------------------------------------------------
 function renderLatestResults() {
   const container = document.getElementById('latest-results');
   if (!container) return;
@@ -75,31 +81,34 @@ function renderLatestResults() {
   `).join('');
 }
 
-// ─── News Highlights ────────────────────────────────────────
+// --- News Highlights ------------------------------------------------------
 function renderNewsHighlights() {
   const container = document.getElementById('news-cards');
   if (!container) return;
+
+  const matchPhoto = getPhotosByCategory('matches', 2);
+  const trainingPhoto = getPhotosByCategory('training', 1);
 
   const news = [
     {
       title: 'Cranes Soar Past Rivals in 3-1 Victory',
       category: 'Match Report',
       excerpt: 'Kanunka FC delivered a dominant performance against local rivals, with Olanyorr Kulou scoring a brace to seal a convincing victory at Cranes Stadium.',
-      image: 'img/random/game2.jpg',
+      image: matchPhoto[0]?.src || 'img/photos/root__bac.jpg',
       date: 'Mar 28, 2025'
     },
     {
       title: 'Haling Malah Kamoiro Joins as Star Striker',
       category: 'Transfer',
-      excerpt: 'Kanunka FC has completed the signing of Haling Malah Kamoiro, a talented striker who brings pace and clinical finishing to The Cranes\' attacking line.',
-      image: 'img/random/game.jpg',
+      excerpt: 'Kanunka FC has completed the signing of Haling Malah Kamoiro, a talented striker who brings pace and clinical finishing to The Cranes attacking line.',
+      image: matchPhoto[1]?.src || 'img/photos/root__bac2.jpg',
       date: 'Mar 15, 2025'
     },
     {
       title: 'Youth Academy Produces Next Generation',
       category: 'Club News',
       excerpt: 'The Cranes Academy continues to develop young talent, with three graduates earning spots in the first team squad this season.',
-      image: 'img/training/train1.jpg',
+      image: trainingPhoto[0]?.src || 'img/photos/root__bac.jpg',
       date: 'Mar 10, 2025'
     }
   ];
@@ -113,22 +122,25 @@ function renderNewsHighlights() {
         <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">${n.excerpt}</p>
         <div style="display: flex; justify-content: space-between; align-items: center;">
           <span style="font-size: 0.75rem; color: var(--color-text-muted);"><i class="far fa-calendar"></i> ${n.date}</span>
-          <a href="news.html" style="font-size: 0.8rem; font-weight: 600; color: var(--color-primary);">Read More →</a>
+          <a href="news.html" style="font-size: 0.8rem; font-weight: 600; color: var(--color-primary);">Read More -></a>
         </div>
       </div>
     </article>
   `).join('');
 }
 
-// ─── Video Highlights ───────────────────────────────────────
+// --- Video Highlights -----------------------------------------------------
 function renderVideoHighlights() {
   const container = document.getElementById('video-cards');
   if (!container) return;
 
+  const matchImage = getPhotosByCategory('matches', 1)[0]?.src || 'img/photos/root__bac.jpg';
+  const trainingImage = getPhotosByCategory('training', 1)[0]?.src || 'img/photos/root__bac2.jpg';
+
   const videos = [
-    { title: 'Kanunka FC 2 - 0 OITI FC | Highlights', thumbnail: 'img/videos/video.mp4', type: 'local' },
-    { title: 'Best Goals of the Season', thumbnail: 'img/random/game2.jpg', url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', type: 'youtube' },
-    { title: 'Training Ground Skills', thumbnail: 'img/training/train1.jpg', url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', type: 'youtube' }
+    { title: 'Kanunka FC 2 - 0 OITI FC | Highlights', thumbnail: 'img/videos/Man Utd v Southampton(720P_HD).mp4', type: 'local' },
+    { title: 'Best Goals of the Season', thumbnail: matchImage, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', type: 'youtube' },
+    { title: 'Training Ground Skills', thumbnail: trainingImage, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', type: 'youtube' }
   ];
 
   container.innerHTML = videos.map(v => `
@@ -148,5 +160,66 @@ function renderVideoHighlights() {
         <h4 style="font-size: 0.95rem;">${v.title}</h4>
       </div>
     </div>
+  `).join('');
+}
+
+// --- New Home Sections ----------------------------------------------------
+function renderHomePhotoWall() {
+  const container = document.getElementById('home-photo-wall');
+  if (!container) return;
+
+  const wallPhotos = [
+    ...getPhotosByCategory('matches', 4),
+    ...getPhotosByCategory('players', 2),
+    ...getPhotosByCategory('fans', 2),
+    ...getPhotosByCategory('training', 2),
+    ...getPhotosByCategory('club', 2)
+  ].slice(0, 12);
+
+  container.innerHTML = wallPhotos.map(photo => `
+    <article class="home-photo-item">
+      <img src="${photo.src}" alt="${photo.caption}" loading="lazy">
+      <span>${photo.category.replace(/-/g, ' ')}</span>
+    </article>
+  `).join('');
+}
+
+function renderFanVoices() {
+  const container = document.getElementById('fan-voices-grid');
+  if (!container) return;
+
+  const fansPhotos = getPhotosByCategory('fans', 3);
+  const fallback = getPhotosByCategory('club', 3);
+
+  const voices = [
+    {
+      quote: 'When The Cranes play, the whole community becomes one family.',
+      name: 'Naserian K.',
+      role: 'Season Ticket Holder',
+      photo: fansPhotos[0]?.src || fallback[0]?.src || 'img/photos/root__bac.jpg'
+    },
+    {
+      quote: 'Every matchday feels like a celebration of our identity and pride.',
+      name: 'Mpaaye T.',
+      role: 'Supporters Branch Lead',
+      photo: fansPhotos[1]?.src || fallback[1]?.src || 'img/photos/root__bac2.jpg'
+    },
+    {
+      quote: 'The energy in the stands pushes the players beyond their limits.',
+      name: 'Lentoi P.',
+      role: 'Youth Fan Club',
+      photo: fansPhotos[2]?.src || fallback[2]?.src || 'img/photos/root__bac.jpg'
+    }
+  ];
+
+  container.innerHTML = voices.map(voice => `
+    <article class="card" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+      <img src="${voice.photo}" alt="${voice.name}" class="card-img" loading="lazy">
+      <div class="card-body">
+        <p style="font-size: 0.95rem; color: #e2e8f0; margin-bottom: 1rem; line-height: 1.7;">"${voice.quote}"</p>
+        <p style="font-weight: 700; color: #fff; font-size: 0.9rem;">${voice.name}</p>
+        <p style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em;">${voice.role}</p>
+      </div>
+    </article>
   `).join('');
 }

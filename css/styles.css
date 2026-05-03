@@ -20,6 +20,8 @@
   --color-bg: #f8fafc;
   --color-text: #1e293b;
   --color-text-muted: #64748b;
+  --color-text-primary: var(--color-text);
+  --color-text-secondary: var(--color-text-muted);
   --color-border: #e2e8f0;
   --color-gold: #ffd700;
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -896,6 +898,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
+   BREADCRUMB NAVIGATION
+   ============================================================ */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  color: #cbd5e1;
+  transition: all var(--transition-fast);
+  text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-secondary);
+}
+
+.breadcrumb span:not(:last-child) {
+  color: #64748b;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+[data-theme="dark"] .breadcrumb a {
+  color: #94a3b8;
+}
+
+/* ============================================================
    PLAYER CARD
    ============================================================ */
 .player-card {
@@ -981,6 +1020,60 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
+}
+
+/* ============================================================
+   HOME PHOTO WALL
+   ============================================================ */
+.home-photo-wall {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-photo-item {
+  position: relative;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  min-height: 160px;
+}
+
+.home-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.home-photo-item:hover img {
+  transform: scale(1.06);
+}
+
+.home-photo-item span {
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.home-photo-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.05));
+}
+
+@media (min-width: 768px) {
+  .home-photo-wall {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 /* ============================================================

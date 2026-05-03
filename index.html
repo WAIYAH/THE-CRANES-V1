@@ -16,10 +16,24 @@
   <meta property="og:locale" content="en_KE">
 
   <title>Kanunka FC - The Cranes | Official Website</title>
+  <meta property="og:title" content="Kanunka FC - The Cranes | Official Website">
+  <meta property="og:description" content="Follow Kanunka FC - The Cranes, one of Kenya's top football clubs. Get latest match updates, player info, news, and tickets.">
+  <meta property="og:image" content="https://kanunkafc.com/img/craneslogo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kanunka FC - The Cranes | Official Website">
+  <meta name="twitter:description" content="Follow Kanunka FC - The Cranes for latest football news and match updates.">
+  <meta name="twitter:image" content="https://kanunkafc.com/img/craneslogo.png">
+  <link rel="canonical" href="https://kanunkafc.com/">
+  <link rel="manifest" href="/manifest.json">
 
   <!-- Preload Critical Assets -->
   <link rel="preload" href="css/styles.css" as="style">
   <link rel="icon" href="img/craneslogo.png" type="image/png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Kanunka FC">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
@@ -54,8 +68,8 @@
   <main>
     <!-- Hero Section -->
     <section class="hero" id="hero">
-      <div class="hero-bg" id="hero-bg-1" style="background-image: url('img/bac.jpg');"></div>
-      <div class="hero-bg" id="hero-bg-2" style="background-image: url('img/bac2.jpg'); opacity: 0;"></div>
+      <div class="hero-bg" id="hero-bg-1" style="background-image: url('img/photos/root__bac.jpg');"></div>
+      <div class="hero-bg" id="hero-bg-2" style="background-image: url('img/photos/root__bac2.jpg'); opacity: 0;"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-secondary); font-weight: 600; margin-bottom: 0.5rem;">Welcome to</p>
@@ -87,13 +101,13 @@
             </div>
             <div class="match-vs">VS</div>
             <div class="match-team">
-              <img src="img/crane.png" alt="Kish FC" width="48" height="48">
-              <span>Kish FC</span>
+              <img src="img/logo/logo_2.png" alt="Oiti FC crest" width="48" height="48">
+              <span>Oiti FC</span>
             </div>
           </div>
           <div class="countdown" id="next-match-countdown"></div>
           <div class="match-meta" style="text-align: center; margin-top: 1.25rem;">
-            <p><i class="far fa-calendar"></i> April 15, 2026 &nbsp; <i class="far fa-clock"></i> 3:00 PM</p>
+            <p><i class="far fa-calendar"></i> May 13, 2026 &nbsp; <i class="far fa-clock"></i> 3:00 PM</p>
             <p><i class="fas fa-map-marker-alt"></i> Cranes Stadium</p>
           </div>
           <div style="text-align: center; margin-top: 1.25rem;">
@@ -156,7 +170,7 @@
         </div>
         <div class="reveal" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; justify-content: center;">
           <div style="flex: 0 0 280px;">
-            <img src="img/players/olanyorr.jpg" alt="Olanyorr Kulou" style="width: 280px; height: 340px; object-fit: cover; object-position: top; border-radius: 1rem; border: 3px solid var(--color-secondary);" loading="lazy">
+            <img src="img/photos/players__lanyorr.jpg" alt="Olanyorr Kulou" style="width: 280px; height: 340px; object-fit: cover; object-position: top; border-radius: 1rem; border: 3px solid var(--color-secondary);" loading="lazy">
           </div>
           <div style="max-width: 500px;">
             <span class="card-badge" style="background: rgba(245,158,11,0.2); color: var(--color-secondary); margin-bottom: 1rem; display: inline-block;">⭐ Player of the Season</span>
@@ -189,6 +203,33 @@
       </div>
     </section>
 
+    <!-- Cranes Moment Wall -->
+    <section class="section" id="moment-wall">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Cranes Moment Wall</h2>
+          <p>A rolling visual story from matchdays, training, fans, and club life</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="home-photo-wall reveal" id="home-photo-wall"></div>
+        <div style="text-align: center; margin-top: 2rem;" class="reveal">
+          <a href="gallery.html" class="btn-primary"><i class="fas fa-images"></i> Explore Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fan Voices -->
+    <section class="section" style="background: var(--color-dark); color: #f1f5f9;" id="fan-voices">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 style="color: #fff;">Fan Voices</h2>
+          <p style="color: #94a3b8;">The heartbeat of The Cranes, from the stands</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid-3 reveal" id="fan-voices-grid"></div>
+      </div>
+    </section>
+
     <!-- Sponsor Section -->
     <section class="section reveal" style="background: var(--color-card); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
       <div class="container" style="text-align: center;">
@@ -207,6 +248,7 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/photo-library.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>
