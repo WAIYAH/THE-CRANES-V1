@@ -11,29 +11,11 @@ const jobListings = [
     type: 'Full-time'
   },
   {
-    title: 'Assistant Coach',
-    category: 'Technical Staff',
-    icon: 'fa-clipboard-list',
-    description: 'Support the head coach in training sessions, match preparation, tactical analysis and player development programmes.',
-    requirements: ['CAF/FIFA coaching license', '3+ years coaching experience', 'Team leadership skills'],
-    deadline: 'May 30, 2026',
-    type: 'Full-time'
-  },
-  {
-    title: 'Fitness Trainer',
-    category: 'Technical Staff',
-    icon: 'fa-heartbeat',
-    description: 'Design and implement fitness programmes, manage player conditioning and injury prevention protocols.',
-    requirements: ['Sports Science degree or equivalent', 'Experience in football fitness', 'First-aid certification'],
-    deadline: 'June 10, 2026',
-    type: 'Full-time'
-  },
-  {
-    title: 'Administrative Staff',
-    category: 'Operations',
-    icon: 'fa-briefcase',
-    description: 'Manage day-to-day club operations, scheduling, correspondence and club documentation.',
-    requirements: ['Degree in Business Administration', 'Proficiency in MS Office', 'Excellent communication skills'],
+    title: 'Midfielder Position',
+    category: 'Playing Staff',
+    icon: 'fa-running',
+    description: 'Creative playmaker needed to control the midfield, link play, and dictate match tempo.',
+    requirements: ['Strong passing and vision', 'Age 18–30', 'High work rate and tactical discipline'],
     deadline: 'June 15, 2026',
     type: 'Full-time'
   }

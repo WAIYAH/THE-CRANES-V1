@@ -9,29 +9,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ─── Player Data ────────────────────────────────────────────
-const SAMPLE_PLAYER_IMAGE = 'img/players/sample.jpg';
-
-const players = [
-  { name: 'Olanyorr Kulou', position: 'Forward', age: 24, nationality: 'Kenya', goals: 15, assists: 4, matches: 8, img: 'img/players/lanyorr.jpg', bio: 'Top scorer and the heartbeat of the attack. Clinical finisher.' },
-  { name: 'Nkababa', position: 'Forward', age: 22, nationality: 'Kenya', goals: 3, assists: 2, matches: 7, img: 'img/players/nkababa.jpg', bio: 'Pacy winger with an eye for goal and creative flair.' },
-  { name: 'Lacazette', position: 'Forward', age: 23, nationality: 'Kenya', goals: 2, assists: 3, matches: 6, img: SAMPLE_PLAYER_IMAGE, bio: 'Versatile forward who can play across the front line.' },
-  { name: 'Mpaira', position: 'Forward', age: 21, nationality: 'Kenya', goals: 2, assists: 1, matches: 7, img: SAMPLE_PLAYER_IMAGE, bio: 'Young talent with explosive pace and dribbling skills.' },
-  { name: 'Palmer', position: 'Forward', age: 22, nationality: 'Kenya', goals: 2, assists: 2, matches: 6, img: SAMPLE_PLAYER_IMAGE, bio: 'Creative attacker known for his vision and passing.' },
-  { name: 'Saika', position: 'Forward', age: 20, nationality: 'Kenya', goals: 2, assists: 1, matches: 5, img: SAMPLE_PLAYER_IMAGE, bio: 'Exciting young prospect from the academy.' },
-  { name: 'Haling Malah Kamoiro', position: 'Forward', age: 25, nationality: 'Kenya', goals: 1, assists: 2, matches: 4, img: 'img/players/malah.jpg', bio: 'New signing bringing pace and clinical finishing.' },
-  { name: 'Ramos Kukuni', position: 'Defender', age: 26, nationality: 'Kenya', goals: 2, assists: 0, matches: 8, img: 'img/players/ramos.jpg', bio: 'Club captain. Rock-solid defender and natural leader.' },
-  { name: 'Leshan Kaiseyie', position: 'Defender', age: 24, nationality: 'Kenya', goals: 0, assists: 1, matches: 8, img: 'img/players/leshan.jpg', bio: 'Vice-captain. Consistent and reliable at the back.' },
-  { name: 'Kashale', position: 'Defender', age: 23, nationality: 'Kenya', goals: 0, assists: 0, matches: 7, img: SAMPLE_PLAYER_IMAGE, bio: 'Strong in the air and commanding in defense.' },
-  { name: 'Mbote', position: 'Defender', age: 22, nationality: 'Kenya', goals: 0, assists: 1, matches: 6, img: SAMPLE_PLAYER_IMAGE, bio: 'Versatile defender comfortable on either flank.' },
-  { name: 'Liaram', position: 'Defender', age: 25, nationality: 'Kenya', goals: 1, assists: 0, matches: 7, img: SAMPLE_PLAYER_IMAGE, bio: 'Experienced center-back with excellent reading of the game.' },
-  { name: 'Kishoyian', position: 'Defender', age: 21, nationality: 'Kenya', goals: 0, assists: 0, matches: 5, img: SAMPLE_PLAYER_IMAGE, bio: 'Young defender with great potential and pace.' },
-  { name: 'Torome', position: 'Defender', age: 23, nationality: 'Kenya', goals: 0, assists: 0, matches: 6, img: SAMPLE_PLAYER_IMAGE, bio: 'Tough-tackling full-back with attacking instincts.' },
-  { name: 'Kudate', position: 'Defender', age: 22, nationality: 'Kenya', goals: 0, assists: 2, matches: 7, img: SAMPLE_PLAYER_IMAGE, bio: 'Energetic wing-back who loves to overlap.' },
-  { name: 'Loserian', position: 'Defender', age: 24, nationality: 'Kenya', goals: 0, assists: 0, matches: 6, img: SAMPLE_PLAYER_IMAGE, bio: 'Solid and dependable center-back.' },
-  { name: 'Leshinka Jr.', position: 'Midfielder', age: 20, nationality: 'Kenya', goals: 0, assists: 3, matches: 7, img: SAMPLE_PLAYER_IMAGE, bio: 'Creative midfielder with excellent passing range.' },
-  { name: 'Tikoko', position: 'Midfielder', age: 23, nationality: 'Kenya', goals: 1, assists: 2, matches: 6, img: SAMPLE_PLAYER_IMAGE, bio: 'Box-to-box midfielder with tireless energy.' },
-  { name: 'Shoroyian', position: 'Midfielder', age: 22, nationality: 'Kenya', goals: 0, assists: 1, matches: 5, img: SAMPLE_PLAYER_IMAGE, bio: 'Defensive midfielder who shields the back line.' },
-  { name: 'Meoli', position: 'Goalkeeper', age: 27, nationality: 'Kenya', goals: 0, assists: 0, matches: 8, img: 'img/players/ramsey-gk.jpg', bio: 'First-choice keeper. Exceptional shot-stopper and commander.' },
+const playersData = [
+  { name: 'Olanyorr Kuluo', position: 'Forward', age: 22, nationality: 'Kenya', goals: 12, assists: 5, matches: 18, img: 'img/players/lanyorr.jpg', bio: 'A clinical striker with a knack for goals.', number: 10 },
+  { name: 'Rangayia Kaiseyie', position: 'Forward', age: 16, nationality: 'Kenya', goals: 2, assists: 3, matches: 20, img: 'img/players/rangayia.jpg', bio: 'A young and creative forward with great vision and passing ability.', number: 11 },
+  { name: 'Anderson Kukuni', position: 'Midfielder', age: 29, nationality: 'Kenya', goals: 1, assists: 3, matches: 17, img: 'img/players/anderson.jpg', bio: 'A commanding midfielder with excellent ball control and distribution.', number: 8 },
+  { name: 'Ramsey Kukuni', position: 'Goalkeeper', age: 27, nationality: 'Kenya', goals: 0, assists: 0, matches: 19, img: 'img/players/ramsey-gk.jpg', bio: 'A reliable shot-stopper with quick reflexes and great positioning.', number: 1 },
+  { name: 'Leshan Kaiseyie', position: 'Defender', age: 22, nationality: 'Kenya', goals: 2, assists: 3, matches: 17, img: 'img/players/leshan.jpg', bio: 'A tough and versatile defender with great tackling and aerial ability.', number: 4 },
+  { name: 'Simel Sankale', position: 'Defender', age: 22, nationality: 'Kenya', goals: 0, assists: 3, matches: 17, img: 'img/players/simel.jpg', bio: 'A composed and intelligent defender with strong defensive awareness.', number: 5 },
+  { name: 'Sanare Lenjirr', position: 'Defender', age: 21, nationality: 'Kenya', goals: 1, assists: 3, matches: 17, img: 'img/players/sanare.jpg', bio: 'A pacey full-back known for overlapping runs and defensive solidity.', number: 3 },
+  { name: 'Moseka Kamoiro', position: 'Defender', age: 23, nationality: 'Kenya', goals: 2, assists: 3, matches: 10, img: 'img/players/sample.jpg', bio: 'A no-nonsense center-back with great strength and composure.', number: 6 },
+  { name: 'Nicko Kaiseyie', position: 'Defender', age: 25, nationality: 'Kenya', goals: 0, assists: 3, matches: 17, img: 'img/players/nick.jpg', bio: 'A disciplined defender with strong positioning and tackling skills.', number: 2 },
+  { name: 'Katambe Kudate', position: 'Goalkeeper', age: 23, nationality: 'Kenya', goals: 0, assists: 0, matches: 15, img: 'img/players/sample.jpg', bio: 'An agile goalkeeper with great shot-stopping ability and leadership.', number: 13 },
+  { name: 'Selo Twala', position: 'Defender', age: 26, nationality: 'Kenya', goals: 0, assists: 3, matches: 17, img: 'img/players/selo.jpg', bio: 'A hardworking defender known for strong tackling and aerial dominance.', number: 15 },
+  { name: 'Siameto Takona', position: 'Defender', age: 24, nationality: 'Kenya', goals: 0, assists: 0, matches: 7, img: 'img/players/siameto.jpg', bio: 'A versatile defender with great composure and tactical awareness.', number: 14 },
+  { name: 'Tooto Koronkoro', position: 'Forward', age: 17, nationality: 'Kenya', goals: 2, assists: 3, matches: 16, img: 'img/players/tooto.jpg', bio: 'A young and energetic forward with a sharp eye for goal.', number: 17 },
+  { name: 'Jack Silantoi', position: 'Defender', age: 28, nationality: 'Kenya', goals: 1, assists: 3, matches: 15, img: 'img/players/jack.jpg', bio: 'An experienced defender with excellent leadership and game-reading.', number: 16 },
+  { name: 'Olonana Dapash', position: 'Forward', age: 16, nationality: 'Kenya', goals: 0, assists: 0, matches: 17, img: 'img/players/olonana.jpg', bio: 'A quick and technical forward always looking for creative plays.', number: 19 },
+  { name: 'Nkababa Kamoiro', position: 'Forward', age: 23, nationality: 'Kenya', goals: 2, assists: 3, matches: 17, img: 'img/players/nkababa.jpg', bio: 'A strong and pacey forward with an eye for goal and link-up play.', number: 9 },
+  { name: 'Lekishon Kukuni', position: 'Midfielder', age: 21, nationality: 'Kenya', goals: 0, assists: 3, matches: 17, img: 'img/players/sample.jpg', bio: 'A creative midfielder with great passing accuracy and vision.', number: 20 },
+  { name: 'Jamlick Tein', position: 'Midfielder', age: 26, nationality: 'Kenya', goals: 2, assists: 3, matches: 17, img: 'img/players/sample.jpg', bio: 'A box-to-box midfielder with great stamina and ball-winning ability.', number: 18 },
+  { name: 'Neliang', position: 'Defender', age: 23, nationality: 'Kenya', goals: 2, assists: 3, matches: 7, img: 'img/players/sample.jpg', bio: 'A resilient defender with strong positioning and great physicality.', number: 22 },
+  { name: 'Sankale', position: 'Forward', age: 27, nationality: 'Kenya', goals: 0, assists: 1, matches: 7, img: 'img/players/sample.jpg', bio: 'A clinical striker with excellent movement and finishing ability.', number: 21 }
 ];
 
 // ─── Render Players ─────────────────────────────────────────
@@ -40,7 +38,7 @@ function renderPlayers(filtered) {
   const noResults = document.getElementById('no-results');
   if (!container) return;
 
-  const list = filtered || players;
+  const list = filtered || playersData;
 
   if (list.length === 0) {
     container.innerHTML = '';
@@ -52,6 +50,7 @@ function renderPlayers(filtered) {
 
   container.innerHTML = list.map((p, i) => `
     <div class="player-card">
+      <div class="player-card-number">#${p.number}</div>
       <img src="${p.img}" alt="${p.name}" class="player-card-img" loading="lazy" onerror="this.src='img/players/sample.jpg'; this.style.objectFit='contain'; this.style.padding='2rem'; this.style.background='var(--color-dark)';">
       <div class="player-card-info">
         <div class="player-card-name">${p.name}</div>
@@ -85,7 +84,7 @@ function initPlayerFilters() {
     const search = searchBar?.value.toLowerCase() || '';
     const pos = posSelect?.value || 'all';
 
-    const filtered = players.filter(p => {
+    const filtered = playersData.filter(p => {
       const matchName = p.name.toLowerCase().includes(search);
       const matchPos = pos === 'all' || p.position === pos;
       return matchName && matchPos;
