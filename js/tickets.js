@@ -3,7 +3,7 @@
 const ticketTypes = [
   {
     name: 'General Admission',
-    price: 500,
+    price: 50,
     currency: 'KES',
     icon: 'fa-users',
     color: 'var(--color-accent)',
@@ -11,7 +11,7 @@ const ticketTypes = [
   },
   {
     name: 'Covered Stand',
-    price: 1000,
+    price: 50,
     currency: 'KES',
     icon: 'fa-umbrella',
     color: 'var(--color-secondary)',
@@ -20,7 +20,7 @@ const ticketTypes = [
   },
   {
     name: 'VIP Lounge',
-    price: 3000,
+    price: 50,
     currency: 'KES',
     icon: 'fa-crown',
     color: 'var(--color-primary)',
@@ -31,7 +31,7 @@ const ticketTypes = [
 const membershipPackages = [
   {
     name: 'Bronze Fan',
-    price: '5,000',
+    price: '1,200',
     period: 'per season',
     icon: 'fa-medal',
     color: '#cd7f32',
@@ -39,7 +39,7 @@ const membershipPackages = [
   },
   {
     name: 'Silver Supporter',
-    price: '12,000',
+    price: '2,200',
     period: 'per season',
     icon: 'fa-star',
     color: '#94a3b8',
@@ -48,7 +48,7 @@ const membershipPackages = [
   },
   {
     name: 'Gold Eagle',
-    price: '30,000',
+    price: '2,900',
     period: 'per season',
     icon: 'fa-gem',
     color: '#f59e0b',
